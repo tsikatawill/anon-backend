@@ -1,0 +1,25 @@
+{
+  "id": "0006_uxPJlnw9",
+  "steps": [
+    {
+      "collection": "campaign",
+      "field": "replies",
+      "type": "remove-field"
+    },
+    {
+      "collection": "campaign",
+      "definition": {
+        "type": "array",
+        "required": false,
+        "unique": false,
+        "items": {
+          "type": "id",
+          "relation": "reply"
+        }
+      },
+      "name": "replies",
+      "type": "add-field"
+    }
+  ],
+  "version": 6
+}

@@ -1,0 +1,11 @@
+{
+  "id": "0007_qVDlGZGu",
+  "steps": [
+    {
+      "collection": "campaign",
+      "to": "campaigns",
+      "type": "rename-collection"
+    }
+  ],
+  "version": 7
+}

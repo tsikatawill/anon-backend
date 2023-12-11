@@ -1,0 +1,40 @@
+{
+  "id": "0002_xzsjWwJc",
+  "steps": [
+    {
+      "collection": {
+        "exposed": true,
+        "indexes": [],
+        "migrationSteps": [],
+        "name": "campaign",
+        "schema": {
+          "title": {
+            "type": "string",
+            "required": true,
+            "unique": false
+          },
+          "created_by": {
+            "type": "id",
+            "required": true,
+            "unique": false,
+            "relation": "users"
+          },
+          "description": {
+            "type": "string",
+            "required": false,
+            "unique": false
+          },
+          "replies": {
+            "type": "string",
+            "required": false,
+            "unique": false
+          }
+        },
+        "template": false
+      },
+      "name": "campaign",
+      "type": "create-collection"
+    }
+  ],
+  "version": 2
+}

@@ -1,0 +1,11 @@
+{
+  "id": "0008_WoF3voGx",
+  "steps": [
+    {
+      "collection": "campaign-type",
+      "to": "campaign-types",
+      "type": "rename-collection"
+    }
+  ],
+  "version": 8
+}

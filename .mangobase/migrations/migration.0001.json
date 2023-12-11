@@ -1,0 +1,24 @@
+{
+  "id": "0001_FKi4ZzCQ",
+  "steps": [
+    {
+      "collection": {
+        "exposed": true,
+        "indexes": [],
+        "migrationSteps": [],
+        "name": "campaign-type",
+        "schema": {
+          "title": {
+            "type": "string",
+            "required": true,
+            "unique": false
+          }
+        },
+        "template": false
+      },
+      "name": "campaign-type",
+      "type": "create-collection"
+    }
+  ],
+  "version": 1
+}

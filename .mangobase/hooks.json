@@ -1,0 +1,26 @@
+{
+  "users": {
+    "after": {
+      "create": [
+        [
+          "create-auth-credential"
+        ]
+      ],
+      "find": [],
+      "get": [],
+      "patch": [],
+      "remove": []
+    },
+    "before": {
+      "create": [
+        [
+          "auth-require-password"
+        ]
+      ],
+      "find": [],
+      "get": [],
+      "patch": [],
+      "remove": []
+    }
+  }
+}

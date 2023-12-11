@@ -1,0 +1,11 @@
+{
+  "id": "0009_aAesiacJ",
+  "steps": [
+    {
+      "collection": "reply",
+      "to": "replies",
+      "type": "rename-collection"
+    }
+  ],
+  "version": 9
+}

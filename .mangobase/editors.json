@@ -1,0 +1,27 @@
+{
+  "campaign-types": {
+    "nodes": [
+      {
+        "width": 224,
+        "height": 234,
+        "data": {},
+        "id": "service",
+        "position": {
+          "x": 500,
+          "y": 300
+        },
+        "type": "service-node-type",
+        "positionAbsolute": {
+          "x": 500,
+          "y": 300
+        }
+      }
+    ],
+    "edges": [],
+    "viewport": {
+      "x": 0,
+      "y": 0,
+      "zoom": 1
+    }
+  }
+}

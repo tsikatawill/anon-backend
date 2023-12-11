@@ -1,0 +1,32 @@
+{
+  "id": "0005_isEOiZLX",
+  "steps": [
+    {
+      "collection": "reply",
+      "field": "type",
+      "type": "remove-field"
+    },
+    {
+      "collection": "reply",
+      "definition": {
+        "type": "id",
+        "required": true,
+        "unique": false,
+        "relation": "reply-type"
+      },
+      "name": "type",
+      "type": "add-field"
+    },
+    {
+      "collection": "reply",
+      "definition": {
+        "type": "string",
+        "required": true,
+        "unique": false
+      },
+      "name": "content",
+      "type": "add-field"
+    }
+  ],
+  "version": 5
+}

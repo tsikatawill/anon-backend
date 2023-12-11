@@ -1,0 +1,179 @@
+{
+  "_migrations": {
+    "exposed": false,
+    "indexes": [
+      {
+        "fields": [
+          "version"
+        ],
+        "options": {
+          "unique": true
+        }
+      }
+    ],
+    "name": "_migrations",
+    "schema": {
+      "id": {
+        "required": true,
+        "type": "string"
+      },
+      "version": {
+        "required": true,
+        "type": "number"
+      }
+    }
+  },
+  "users": {
+    "exposed": true,
+    "indexes": [
+      {
+        "fields": [
+          "username"
+        ],
+        "options": {
+          "unique": true
+        }
+      },
+      {
+        "fields": [
+          "email"
+        ],
+        "options": {
+          "unique": true
+        }
+      }
+    ],
+    "name": "users",
+    "readOnlySchema": true,
+    "schema": {
+      "avatar": {
+        "type": "string"
+      },
+      "email": {
+        "required": true,
+        "type": "string",
+        "unique": true
+      },
+      "fullname": {
+        "required": true,
+        "type": "string"
+      },
+      "role": {
+        "defaultValue": "basic",
+        "required": true,
+        "type": "string"
+      },
+      "username": {
+        "required": true,
+        "type": "string",
+        "unique": true
+      },
+      "verified": {
+        "type": "boolean"
+      }
+    }
+  },
+  "auth-credentials": {
+    "indexes": [
+      {
+        "fields": [
+          "user"
+        ],
+        "options": {
+          "unique": true
+        }
+      }
+    ],
+    "name": "auth-credentials",
+    "readOnlySchema": true,
+    "schema": {
+      "password": {
+        "required": true,
+        "type": "string"
+      },
+      "user": {
+        "relation": "users",
+        "required": true,
+        "type": "id"
+      }
+    }
+  },
+  "reply-type": {
+    "exposed": true,
+    "indexes": [],
+    "name": "reply-type",
+    "schema": {
+      "title": {
+        "type": "string",
+        "required": true,
+        "unique": false
+      }
+    },
+    "template": false
+  },
+  "campaigns": {
+    "exposed": true,
+    "indexes": [],
+    "name": "campaigns",
+    "schema": {
+      "title": {
+        "required": true,
+        "type": "string",
+        "unique": false
+      },
+      "created_by": {
+        "relation": "users",
+        "required": true,
+        "type": "id",
+        "unique": false
+      },
+      "description": {
+        "required": false,
+        "type": "string",
+        "unique": false
+      },
+      "replies": {
+        "items": {
+          "type": "id",
+          "relation": "replies"
+        },
+        "required": false,
+        "type": "array",
+        "unique": false
+      }
+    },
+    "template": false
+  },
+  "campaign-types": {
+    "exposed": true,
+    "indexes": [],
+    "name": "campaign-types",
+    "schema": {
+      "title": {
+        "required": true,
+        "type": "string",
+        "unique": false
+      }
+    },
+    "template": false
+  },
+  "replies": {
+    "exposed": true,
+    "indexes": [],
+    "name": "replies",
+    "schema": {
+      "type": {
+        "relation": "reply-type",
+        "required": true,
+        "type": "id",
+        "unique": false
+      },
+      "content": {
+        "required": true,
+        "type": "string",
+        "unique": false
+      }
+    },
+    "template": false
+  }
+}

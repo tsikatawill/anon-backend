@@ -1,0 +1,24 @@
+{
+  "id": "0003_xEFfguUF",
+  "steps": [
+    {
+      "collection": {
+        "exposed": true,
+        "indexes": [],
+        "migrationSteps": [],
+        "name": "reply",
+        "schema": {
+          "type": {
+            "type": "string",
+            "required": true,
+            "unique": false
+          }
+        },
+        "template": false
+      },
+      "name": "reply",
+      "type": "create-collection"
+    }
+  ],
+  "version": 3
+}

@@ -1,0 +1,24 @@
+{
+  "id": "0004_P7n4ZmLz",
+  "steps": [
+    {
+      "collection": {
+        "exposed": true,
+        "indexes": [],
+        "migrationSteps": [],
+        "name": "reply-type",
+        "schema": {
+          "title": {
+            "type": "string",
+            "required": true,
+            "unique": false
+          }
+        },
+        "template": false
+      },
+      "name": "reply-type",
+      "type": "create-collection"
+    }
+  ],
+  "version": 4
+}
