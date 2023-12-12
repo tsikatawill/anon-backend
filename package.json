@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node dist/index.js",
     "dev": "tsx watch src/index.ts",
-    "build": "rimraf ./dist && node build.js"
+    "build": "yarn && rimraf ./dist && node build.js"
   },
   "keywords": [],
   "author": "",
