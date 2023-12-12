@@ -5,24 +5,27 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "start": "node dist/index.js",
     "dev": "tsx watch src/index.ts",
-    "build": "npx esbuild src/index.ts --bundle --platform=node --target=node18 --outfile=dist/index.js"
+    "build": "rimraf ./dist && node build.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@mangobase/express": "^0.7.8",
-    "@mangobase/mongodb": "^0.7.8",
+    "@mangobase/express": "^0.8.1",
+    "@mangobase/mongodb": "^0.8.1",
     "@next/env": "^14.0.3",
     "@types/cors": "^2.8.17",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "mangobase": "^0.7.8",
+    "mangobase": "^0.8.1",
     "mongodb": "^6.3.0"
   },
   "devDependencies": {
+    "esbuild": "^0.19.9",
+    "rimraf": "^5.0.5",
     "tsx": "^4.6.1",
     "typescript": "^5.3.2"
   }
