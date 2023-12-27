@@ -1,0 +1,16 @@
+{
+  "id": "0010_rGpwAF3S",
+  "steps": [
+    {
+      "collection": "campaigns",
+      "definition": {
+        "type": "boolean",
+        "required": false,
+        "unique": false
+      },
+      "name": "public",
+      "type": "add-field"
+    }
+  ],
+  "version": 10
+}

@@ -13,14 +13,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@mangobase/express": "^0.8.1",
-    "@mangobase/mongodb": "^0.8.1",
+    "@mangobase/express": "^0.9.6",
+    "@mangobase/mongodb": "^0.9.6",
     "@next/env": "^14.0.3",
     "@types/cors": "^2.8.17",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "mangobase": "^0.8.1",
+    "mangobase": "^0.9.6",
     "mongodb": "^6.3.0"
   },
   "devDependencies": {

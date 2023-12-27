@@ -1,0 +1,16 @@
+{
+  "id": "0011_clj0WWsF",
+  "steps": [
+    {
+      "collection": "replies",
+      "definition": {
+        "type": "id",
+        "required": false,
+        "relation": "users"
+      },
+      "name": "by",
+      "type": "add-field"
+    }
+  ],
+  "version": 11
+}

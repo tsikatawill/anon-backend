@@ -9,7 +9,7 @@ const app = new App({
   db: new MongoDb(process.env.DATABASE_URL!),
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 app.serve(expressServer).listen(PORT, () => {
   console.log(`App started`);

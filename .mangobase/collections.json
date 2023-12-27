@@ -140,6 +140,11 @@
         "required": false,
         "type": "array",
         "unique": false
+      },
+      "public": {
+        "type": "boolean",
+        "required": false,
+        "unique": false
       }
     },
     "template": false
@@ -172,6 +177,11 @@
         "required": true,
         "type": "string",
         "unique": false
+      },
+      "by": {
+        "type": "id",
+        "required": false,
+        "relation": "users"
       }
     },
     "template": false
