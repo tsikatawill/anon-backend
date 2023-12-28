@@ -1,0 +1,25 @@
+{
+  "id": "0013_cw368GpU",
+  "steps": [
+    {
+      "collection": "replies",
+      "definition": {
+        "type": "string",
+        "required": false,
+        "enum": [
+          {
+            "id": "poll-cv675",
+            "text": "poll"
+          },
+          {
+            "id": "general-rbs96",
+            "text": "general"
+          }
+        ]
+      },
+      "name": "type",
+      "type": "add-field"
+    }
+  ],
+  "version": 13
+}

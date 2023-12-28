@@ -1,0 +1,11 @@
+{
+  "id": "0012_cLqPRsqt",
+  "steps": [
+    {
+      "collection": "replies",
+      "field": "type",
+      "type": "remove-field"
+    }
+  ],
+  "version": 12
+}

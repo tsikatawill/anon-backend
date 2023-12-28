@@ -1,0 +1,25 @@
+{
+  "id": "0014_H8RvwCm2",
+  "steps": [
+    {
+      "collection": "campaigns",
+      "definition": {
+        "type": "string",
+        "required": false,
+        "enum": [
+          {
+            "id": "poll-ulzt9",
+            "text": "poll"
+          },
+          {
+            "id": "general-5mjwt",
+            "text": "general"
+          }
+        ]
+      },
+      "name": "type",
+      "type": "add-field"
+    }
+  ],
+  "version": 14
+}

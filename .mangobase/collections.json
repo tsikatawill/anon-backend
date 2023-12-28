@@ -142,9 +142,17 @@
         "unique": false
       },
       "public": {
-        "type": "boolean",
         "required": false,
+        "type": "boolean",
         "unique": false
+      },
+      "type": {
+        "type": "string",
+        "required": false,
+        "enum": [
+          "poll",
+          "general"
+        ]
       }
     },
     "template": false
@@ -167,21 +175,23 @@
     "indexes": [],
     "name": "replies",
     "schema": {
-      "type": {
-        "relation": "reply-type",
-        "required": true,
-        "type": "id",
-        "unique": false
-      },
       "content": {
         "required": true,
         "type": "string",
         "unique": false
       },
       "by": {
-        "type": "id",
+        "relation": "users",
         "required": false,
-        "relation": "users"
+        "type": "id"
+      },
+      "type": {
+        "type": "string",
+        "required": false,
+        "enum": [
+          "poll",
+          "general"
+        ]
       }
     },
     "template": false
